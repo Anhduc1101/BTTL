@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+.square {
+    width: 550px;
+    height: 550px;
+    border: 5px solid;
+    background-color: brown;
+    position: absolute;
+    padding: 10px 10px 10px 10px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    /* border: 10px; */
+    background-color: aqua;
+    border-radius: 50%;
+    position: absolute;
+    /* margin: 10px; */
+    animation: move_circle 5s ease-in-out infinite;
+
+}
+
+@keyframes move_circle {
+    0% {
+        transform: translate(0px);
+    }
+
+    25% {
+        transform: translate(460px);
+
+    }
+
+    50% {
+        transform: rotate(45deg) translate(675px);
+    }
+
+    75% {
+        transform: translateY(460px);
+
+    } 
+
+    100% { 
+       transform: translate(0);
+    }
+
+}
