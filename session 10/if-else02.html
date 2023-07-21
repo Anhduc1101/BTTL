@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            //bt1 chuyển từ độ c sang đọ f
+            // let a = +prompt("Nhập độ C:");
+            // let F = a * 1.8 + 32;
+            // alert("Độ F là:" + (F).toFixed(1));
+
+            //bt2 chuyển từ m sang feet
+            // let a = +prompt("Nhập số đo đơn vị m:");
+            // let ft = a * 3.2808;
+            // alert("Số đo sau khi đổi là:" + ft + "ft");
+
+            //bt3 tính diện tích hình vuong khi biết cạnh a
+            // let a=+prompt("Nhập vào cạnh a:");
+            // if(a>0){
+            //     let s=a*a;
+            //     alert("Diện tích hình vuông là:" +a +"cm2");
+            // }else{
+            //     alert("Không hợp lệ");
+            // }
+
+            //bt4 tính diện tích hình chữ nhật khi biết 2 cạnh a và b
+            // let a=+prompt("Nhập vào cạnh a:");
+            // let b=+prompt("Nhập vào cạnh b:");
+            // if(a>0&&b>0){
+            //     let s=a*b;
+            //     alert("Diện tích hình chữ nhật là:"+s + "cm2");
+            // }else{
+            //     alert("Không hợp lệ");
+            // }
+
+            //bt5 tính diện tích tam giác vuông khi biết 2 cạnh a b
+            // let a=+prompt("Nhập vào cạnh a:");
+            // let b=+prompt("Nhập vào cạnh b:");
+            // if(a>0&&b>0){
+            //     let s=0.5*a*b;
+            //     alert("Diện tích hình chữ nhật là:"+s + "cm2");
+            // }else{
+            //     alert("Không hợp lệ");
+            // }
+
+            //bt6 giải phương trình bậc 1
+            // let a=+prompt("Nhập vào a:");
+            // let b=+prompt("Nhập vào b:");
+            // if(a!=0){
+            //     let x=b/a;
+            //     document.write(" giá trị của x là:"+ x);
+            // }
+
+            //bt7 giải phương trình bậc 2
+            // let a = +prompt("Nhập vào a:");
+            // let b = +prompt("Nhập vào b:");
+            // let c = +prompt("Nhập vào c:");
+            // if (a != 0) {
+            //     let del = b * b - 4 * a * c;
+            //     if (del > 0) {
+            //         let x1 = (-b + Math.sqrt(del)) / (2 * a);
+            //         let x2 = (-b - Math.sqrt(del)) / (2 * a);
+            //         document.write(`Phương trình có 2 nghiệm x1 là ${x1} và x2 là ${x2}`);
+            //     } else if (del = 0) {
+            //         let x = -b / (2 * a);
+            //         document.write(`Phương trình có 2 nghiệm x1, x2 là ${x}`);
+            //     } else {
+            //         document.write(`Phương trình vô nghiệm`);
+            //     }
+            // } else {
+            //     alert("Không phải phương trình bậc 2!");
+            // }
+
+            //bt8 nhập số tuổi của 1 người
+            // let a = parseInt(prompt("Nhập số tuổi :"));
+            // if (a > 0 && a < 120) {
+            //     document.write("Bạn là người!")
+            // }
+
+            //bt9 cạnh của 1 tam giác
+            // ĐK: a, b, c > 0
+            //     a + b > c
+            //     b + c > a
+            //     a + c > b
+            // let a = +prompt("Nhập vào cạnh a:");
+            // let b = +prompt("Nhập vào cạnh b:");
+            // let c = +prompt("Nhập vào cạnh c:");
+            // if (a > 0 && b > 0 && c > 0) {
+            //     if (((a + b) > c) || ((b + c) > a) || ((a + c) > b)) {
+            //         document.write("Điều kiện hợp lệ!");
+            //     }
+            // } else {
+            //     alert("Không hợp lệ");
+            // }
+
+            //bt10 Tính số điện
+            // let a = +prompt("Nhập số điện:");
+            // let x;
+            // if (a <= 50) {
+            //     x = a * 1678;
+            // } else if (a <= 100) {
+            //     x = 50 * 1678 + (a - 50) * 1734;
+            // } else if (a <= 200) {
+            //     x = 50 * 1678 + 50 * 1734 + (a - 100) * 2014;
+            // } else if (a <= 300) {
+            //     x = 50 * 1678 + 50 * 1734 + 100 * 2014 + (a - 200) * 2536;
+            // } else if (a <= 400) {
+            //     x = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + (a - 300) * 2834;
+            // } else {
+            //     x = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + 100 * 2834 + (a - 400) * 2927;
+            // }
+            // document.write(`số tiền điện là: ${x} đồng`);
+
+            //bt11 bài toán thu nhập cá nhân
+            let a = +prompt("Nhập số tiền tính thuế / tháng:");
+            let x;
+            if (a <= 5) {
+                x = a * 0.05;
+            } else if (a <= 10) {
+                x = 5 * 0.05 + (a - 5) * 0.1;
+            } else if (a <= 18) {
+                x = 5 * 0.05 + 5 * 0.1 + (a - 10) * 0.15;
+            } else if (a <= 32) {
+                x = 5 * 0.05 + 5 * 0.1 + 8 * 0.15 + (a - 18) * 0.2;
+            } else if (a <= 52) {
+                x = 5 * 0.05 + 5 * 0.1 + 8 * 0.15 + 14 * 0.2 + (a - 32) * 0.25;
+            } else if (a <= 80) {
+                x = 5 * 0.05 + 5 * 0.1 + 8 * 0.15 + 14 * 0.2 + 20 * 0.25 + (a - 52) * 0.3;
+            } else {
+                x = 5 * 0.05 + 5 * 0.1 + 8 * 0.15 + 14 * 0.2 + 20 * 0.25 + 26 * 0.3 + (a - 80) * 0.35;
+            }
+            document.write(`số tiền thuế phải nộp là: ${x} triệu đồng`);
+
+
+
+            //bt12 bài toán lãi ngân hàng
+            //let a = +prompt("Nhập số tiền vay:");
+            //let b = +prompt("Nhập số tháng vay:");
+            //const c = 0.1;
+            //let t = a * Math.pow((1 + c / 12), b);
+            //document.write(`Lãi suất phải trả là:${Math.round(t)} đồng`);
+        </script>
+    </body>
+
+    </html>
+</body>
+
+</html>

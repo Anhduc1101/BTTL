@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // bt1
+        // let a = +prompt("Nhập vào số a:");
+        // let b = +prompt("Nhập vào số b:");
+        // if(a%b==0){
+        //     document.write("a chia hết cho b");
+        // }else{
+        //     document.write("a không chia hết cho b");
+        // }
+
+        //bt2
+        // let a=+prompt("Nhập tuổi của bạn vào đây:");
+        // if(a>=15){
+        //     alert("Bạn đủ tuổi vào lớp 10");
+        // }else{
+        //     alert("Bạn chưa đủ tuổi vào lớp 10");
+        // }
+
+        //bt3
+        // let a=+prompt("Nhập vào 1 số bất kỳ:");
+        // if(a>0){
+        //     document.write(`${a} là số nguyên dương`);
+        // }else{
+        //     document.write(`${a} là số nguyên âm`);
+        // }
+
+        //bt4
+        // let a = +prompt("Nhập số a:");
+        // let b = +prompt("Nhập số b:");
+        // let c = +prompt("Nhập số c:");
+        // if (a > b && a > c) {
+        //     document.write(`a = ${a} là số lớn nhất`);
+        // } else if (b > a && b > c) {
+        //     document.write(`b = ${b} là số lớn nhất`);
+        // } else {
+        //     document.write(`c = ${c} là số lớn nhất`);
+        // }
+
+        //bt5
+        // let a = +prompt("Điểm bài kiểm tra:");
+        // let b = +prompt("Điểm thi giữa kì:");
+        // let c = +prompt("Điểm thi cuối kì:");
+        // // let tbc=Math.round((a+b+c)/3); 
+        // let tbc = ((a + b + c) / 3).toFixed(1);
+
+        // if (tbc >= 8.0) {
+        //     alert(`Điểm TBC là ${tbc} đạt học lực giỏi !`);
+        // } else if (tbc >= 6.5) {
+        //     alert(`Điểm TBC là ${tbc} đạt học lực khá !`);
+        // } else if (tbc >= 5.0) {
+        //     alert(`Điểm TBC là ${tbc} đạt học lực trung bình !`);
+        // } else {
+        //     alert(`Điểm TBC là ${tbc} đạt học lực yếu !`);
+        // }
+
+        //bt6
+        // let a = +prompt("Nhập vào số lượng hàng (Đơn vị chiếc/cái):");
+        // let b = +prompt("Nhập vào số tiền (Đơn vị triệu VND):");
+        // let c = a * b;
+        // document.writeln("Doanh thu là:" + c + "tr");
+        // if (c > 15) {
+        //     document.writeln("Tiền hoa hồng là 15% =" + c * 15 / 100 + "tr");
+        // } else if (c > 10) {
+        //     document.writeln("Tiền hoa hồng là 10% =" + c * 10 / 100 + "tr");
+        // } else if (c > 5) {
+        //     document.writeln("Tiền hoa hồng là 5% =" + c * 5 / 100 + "tr");
+        // } else {
+        //     document.writeln("Tiền hoa hồng là:" + c);
+        // }
+
+        //bt7
+        let b = prompt("Nhập vùng gọi (no-nội mạng)/(ng-ngoại mạng):")
+        let a = +prompt("nhập số phút gọi:");
+
+        switch (b) {
+            case ("no"):
+                if (a > 60) {
+                    document.write("(1500đ/phút) <br/> Tiền cước là :" + a * 1500 + "VND");
+                } else if (a > 30) {
+                    document.write("(1000đ/phút) <br/> Tiền cước là :" + a * 1000 + "VND");
+                } else if (a > 20) {
+                    document.write("(800đ/phút) <br/> Tiền cước là :" + a * 800 + "VND");
+                } else if (a > 10) {
+                    document.write("(600đ/phút) <br/> Tiền cước là :" + a * 600 + "VND");
+                } else if (a > 5) {
+                    document.write("(500đ/phút) <br/> Tiền cước là :" + a * 500 + "VND");
+                } else if (a > 3) {
+                    document.write("(300đ/phút) <br/> Tiền cước là :" + a * 300 + "VND");
+                } else if (a > 1) {
+                    document.write("(100đ/phút) <br/> Tiền cước là :" + a * 100 + "VND");
+                } else {
+                    document.write("(0đ/phút) <br/> Tiền cước là :" + a * 0 + "VND");
+                } break;
+            case ("ng"):
+                if (a > 60) {
+                    document.write("(1800đ/phút) <br/> Tiền cước là :" + a * 1800 + "VND");
+                } else if (a > 30) {
+                    document.write("(1500đ/phút) <br/> Tiền cước là :" + a * 1500 + "VND");
+                } else if (a > 20) {
+                    document.write("(1200đ/phút) <br/> Tiền cước là :" + a * 1200 + "VND");
+                } else if (a > 10) {
+                    document.write("(900đ/phút) <br/> Tiền cước là :" + a * 900 + "VND");
+                } else if (a > 5) {
+                    document.write("(600đ/phút) <br/> Tiền cước là :" + a * 600 + "VND");
+                } else if (a > 3) {
+                    document.write("(450đ/phút) <br/> Tiền cước là :" + a * 450 + "VND");
+                } else if (a > 1) {
+                    document.write("(300đ/phút) <br/> Tiền cước là :" + a * 300 + "VND");
+                } else {
+                    document.write("(0đ/phút) <br/> Tiền cước là :" + a * 0 + "VND");
+                } break;
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
