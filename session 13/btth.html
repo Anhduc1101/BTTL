@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //bt2 Viết một chương trình JavaScript thực hiện đảo ngược các giá trị trong một mảng đã cho.Không sử dụng phương thức reverse()
+        //  ví dụ 1:
+        // let x = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // let a = 0;
+        // let b = x.length - 1;
+        // while (a < b) {
+        //     let c = x[a];
+        //     x[a] = x[b];
+        //     x[b] = c;
+        //     a++;
+        //     b--;
+        // }
+        // console.log(x);
+        //**********************************************************
+        // ví dụ 2:
+        // const arr="nguyen anh duc"; // chuỗi cần đảo ngược
+        // let l= arr.length; // gán l = độ dài mảng
+        // let arr1=""; //chuỗi kqua
+        // for(i=arr.length-1;i>=0;i--){
+        //     arr1+=arr[i];
+        // }
+        // document.write(arr1.split("/"));
+
+        // bt3 :Viết một chương trình JavaScript để tìm một giá tri được nhập vào từ hộp thoại
+        // có nằm trong mảng hay không. Nếu có in ra vị trí của phần tử đó.
+        // cách 1:
+        // let n = prompt("Nhập vào một giá trị:");
+        // let x = [2, 4, 5, 7, 8, 9];
+        // // let  check=false;
+        // for (let i = 0; i < x.length; i++) {
+        //     if (n == x[i]) {
+        //         console.log(`Số ${n} vừa nhập vào nằm ở vị trí ${i}`);
+        //     }
+        // }
+        //***************************************************************************************************
+        //cách 2: 
+        const arr=["nam","ninh","minh", "hạ","hồi","quế"]; // Khai báo mảng tên của mình
+        const name=prompt("Nhập tên một người:"); // người dùng nhập tên họ muốn
+        let index= arr.indexOf(name); //dùng hàm indexOf để tìm kiếm vị trị của name trong mảng arr
+        // nếu tìm thấy sẽ trả ra vị trí của namez trong mảng arr
+        // nếu không thấy sẽ trả ra -1
+        // kiểm tra vị trí tìm thấy
+        // nếu khác -1 tức là tìm thấy thì in ra vị trí + 1 vì trong arr đánh chỉ số từ 0
+        // nếu = -1 tức là ko tìm thấy thì in ra không có
+        if(index!=-1){
+            console.log("Vị trí",index+1);
+        }else{
+            console.log("Không có!");
+        }
+
+        //bt4: Hướng dẫn tạo mảng và sử dụng các phương thức để thêm, xóa và thay đổi giá trị phần tử ở trong mảng
+        // let array = [];
+        // for (i = 0; i < 10; i++) {
+        //     array.push(i);
+        // }
+        // // console.log(array);
+        // let a = "dog";
+        // array.unshift(a);
+        // // console.log(array);
+        // let b = "aka";
+        // array.push(b);
+        // array.pop();
+        // console.log(array);
+
+
+        //bt5: Tạo mảng có sẵn với các phẩn tử số. Cho người dùng nhập vào một số bất kỳ, sau đó tiến hành kiểm tra:
+        //Nếu số đó có trong mảng cho sẵn thì alert(“Bingo”)
+        //Nếu số đó không có trong mảng cho sẳn thì alert(“Chúc bạn may mắn lần sau”)
+        // let n = +prompt("Nhập vào 1 số bất kỳ từ 0 đến 9:");
+        // let array = [1, 2, 4, 5, 8, 9];
+
+        // let check = false; // ko tim thay dang dung
+
+        // for (i = 0; i < array.length; i++) {
+        //     if (array[i] == n) {
+        //         check = true;
+        //         alert("Bingo!!!");
+        //         break;
+        //     }
+        // }
+        // if (check == false) {
+        //     alert("Không thấy");
+        // }
+
+
+        //bt6:Cho ngươi dùng nhập vào dãy số bất kỳ. Sử dụng split() để chuyển đổi kiểu dữ liệu từ string sang kiểu array.
+        //Tiến hành đảo ngược các phần tử trong mảng
+        // VD: 1,3,5,12,65,98
+        // let n = prompt("Nhập vào đây số bất kỳ được ngăn cách bởi dấu ,");
+        // let convert = n.split(",");
+        // consoloe.log("Chuyển đổi string sang array", convert); // convert=[1,3,5,12,65,98]
+        // console.log("Sử dụng phương thức reverse()", convert.reverse()); //[98,65,12,5,3,1]
+
+
+        //bt7:Cho người dùng nhập vào dãy số bất kỳ. 
+        //Sử dụng split() để chuyển đổi kiểu dữ liệu từ string sang kiểu array. 
+        //Tiến hành duyệt các phần tử và tìm ra phần tử có giá trị lớn nhất trong mảng.
+        // let n = prompt("Nhập vào một số bất kỳ:");
+        // let convert = n.split(",");
+
+        // for (i = 0; i < convert.length; i++) {
+        //     convert[i] = parseInt(convert[i])
+        // }
+        
+        // console.log(convert);
+        // let max = convert[0];
+        // for (i = 0; i < convert.length; i++) {
+        //     if (max < convert[i]) {
+        //         max = convert[i];
+        //     }
+        // }
+        // console.log(max);
+    </script>
+</body>
+
+</html>
