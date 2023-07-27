@@ -185,7 +185,12 @@
             let num2 = +prompt("Nhập 10 số vào mảng b:");
             b.push(num2);
         }
-        c = a.concat(b);
+        for (k = 0; k < 10; k++) {
+            c.push(b[k]);
+            c.push(a[k]);
+            // c = a;
+        }
+        // c = a.concat(b);
         console.log(c);
     </script>
 </body>
