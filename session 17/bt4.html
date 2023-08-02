@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // bt4: [Thực hành] MÔ PHỎNG QUÁ TRÌNH MÈO BẮT CHUỘT
+        // 2. Mô tả
+        // Tạo một class Cat có những thuộc tính:
+        // Tên, khối lượng, tốc độ di chuyển
+        // Có khả năng thực hiện hành vi kêu
+        // Có khả năng bắt chuộc nếu tốc độ của Mèo lớn hơn Chuột
+        // Có khả năng ăn chuột khi đó khối lượng mèo sẽ cộng thêm khối lượng của Chuột(chỉ ăn chuột còn sống)
+        // Tạo class Mouse có những thuộc tính:
+        // Khối lượng và tốc độ di chuyển
+        // Thuộc tính alive để xác định chuột còn sống hay không
+        class Mouse {
+            constructor(weight, speed) {
+                this.weight = weight;
+                this.speed = speed;
+                this.alive = true;
+            }
+        }
+        class Cat {
+            constructor(name, weight, speed) {
+                this.name = name;
+                this.weight = weight;
+                this.speed = speed;
+            }
+            sound() {
+                console.log("Kêu meo meo");
+            }
+            move(mouse) {
+                if (mouse.speed < cat.speed) {
+                    console.log("bắt được chuột");
+                    mouse.alive = false;
+                } else {
+                    console.log("0 bắt được chuột");
+                }
+            }
+            eat(mouse) {
+                if (mouse.alive) {
+                    console.log(" ko ăn được");
+                } else {
+                    console.log("ăn đc");
+                    this.weight += mouse.weight;
+                }
+            }
+        }
+        let cat = new Cat("Tom", 3, 100);
+        let mouse = new Mouse(1, 10);
+        cat.sound();
+        cat.move(mouse);
+        cat.eat(mouse);
+        console.log(cat.weight);
+    </script>
+</body>
+
+</html>

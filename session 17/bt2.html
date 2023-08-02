@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    // bt2: [Thực hành] Xây dựng lớp Hình Tròn
+    // Mô tả
+    // Hãy xây dựng lớp hình tròn theo sơ đồ lớp sau:   
+    // Lớp Circle(hình tròn) gồm:
+    // Thuộc tính:
+    // o bán kính(radius) sẽ nhận vào giá trị dạng số thực
+    // o màu sắc(color) sẽ nhận vào giá trị dạng chuỗi.
+    // Phương thức:
+    // o Circle() là phương thức khởi tạo để tạo đối tượng không tham số.
+    // o getRadius() là phương thức trả về bán kính của hình tròn
+    // o getArea() là phương thức trả về diện tích hình tròn theo công thức S = Math.PI * radius * radius
+     class Circle {
+            constructor(radius, color) {
+                this.radius = radius;
+                this.color = color;
+                this.area=Math.round(Math.PI*radius*radius);
+            }
+        }
+        let circle1= new Circle(5,"black");
+        console.log(circle1);
+    </script>
+</body>
+
+</html>
