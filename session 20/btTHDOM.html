@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="btTHDOM.css">
+</head>
+
+<body>
+    <!-- 1. Tạo một ứng dụng Todo-list -->
+    <table border="1">
+        <tr>
+            <th colspan="4">
+                <h2>My To Do List</h2>
+                <input type="text" id="enterNewStr" placeholder="Input here...">
+                <input type="text" id="enterNewImg" placeholder="Input here...">
+                <button class="btn" onclick="addNewProducList()">Add</button>
+            </th>
+        </tr>
+        <tr>
+            <td id="productListId">Id.</td>
+            <td id="productListImg">Img</td>
+            <td id="productListName">productName</td>
+            <td id="countNumber"></td>
+        </tr>
+        <tbody id="newList">
+
+        </tbody>
+    </table>
+
+
+    <script src="btTHDOM.js"></script>
+</body>
+
+</html>
